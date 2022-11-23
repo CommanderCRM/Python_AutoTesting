@@ -3,19 +3,21 @@ from selenium.webdriver.common.by import By
 import time
 
 try: 
-    link = "http://suninjuly.github.io/registration1.html"
+    link = "http://suninjuly.github.io/registration2.html"
     browser = webdriver.Chrome()
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    input1 = browser.find_element(By.CSS_SELECTOR, ".form-control.first")
+    input1 = browser.find_element(By.CSS_SELECTOR, ".first_block .form-control.first")
     input1.send_keys("Ilya")
     
-    input2 = browser.find_element(By.CSS_SELECTOR, ".form-control.second")
+    input2 = browser.find_element(By.CSS_SELECTOR, ".first_block .form-control.second")
     input2.send_keys("Krivoshein")
 
-    input3 = browser.find_element(By.CSS_SELECTOR, ".form-control.third")
+    input3 = browser.find_element(By.CSS_SELECTOR, ".first_block .form-control.third")
     input3.send_keys("test@mail.ru")
+
+    time.sleep(5)
 
     # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
