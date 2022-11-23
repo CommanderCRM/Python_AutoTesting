@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 import time
 
 try: 
+    # link = "http://suninjuly.github.io/registration1.html"
+    # для безошибочной работы раскомментировать первую ссылку
     link = "http://suninjuly.github.io/registration2.html"
     browser = webdriver.Chrome()
     browser.get(link)
