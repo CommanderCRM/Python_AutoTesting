@@ -13,5 +13,5 @@ def browser(request):
     print("\nstart browser for test, language: {}".format(user_language))
     browser = webdriver.Chrome(options=options)
     yield browser
-    print("\nquit browser..")
+    print("\nquit browser")
     browser.quit()
