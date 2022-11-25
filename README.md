@@ -1,0 +1,1 @@
+All coursework from Testing Automation with Selenium and Python course (https://stepik.org/course/575/)
