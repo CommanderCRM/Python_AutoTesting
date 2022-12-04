@@ -3,10 +3,12 @@ from selenium.webdriver.common.by import By
 import time
 import math
 
-def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
 
-try: 
+def calc(x):
+    return str(math.log(abs(12*math.sin(int(x)))))
+
+
+try:
     link = "http://suninjuly.github.io/execute_script.html"
     browser = webdriver.Chrome()
     browser.get(link)
@@ -26,7 +28,7 @@ try:
 
     option2 = browser.find_element(By.CSS_SELECTOR, "#robotsRule")
     option2.click()
-    
+
     button.click()
 
 

@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-try: 
+try:
     # link = "http://suninjuly.github.io/registration1.html"
     # для безошибочной работы раскомментировать первую ссылку
     link = "http://suninjuly.github.io/registration2.html"
@@ -10,13 +10,16 @@ try:
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    input1 = browser.find_element(By.CSS_SELECTOR, ".first_block .form-control.first")
+    input1 = browser.find_element(
+        By.CSS_SELECTOR, ".first_block .form-control.first")
     input1.send_keys("Ilya")
-    
-    input2 = browser.find_element(By.CSS_SELECTOR, ".first_block .form-control.second")
+
+    input2 = browser.find_element(
+        By.CSS_SELECTOR, ".first_block .form-control.second")
     input2.send_keys("Krivoshein")
 
-    input3 = browser.find_element(By.CSS_SELECTOR, ".first_block .form-control.third")
+    input3 = browser.find_element(
+        By.CSS_SELECTOR, ".first_block .form-control.third")
     input3.send_keys("test@mail.ru")
 
     time.sleep(5)

@@ -4,7 +4,7 @@ import time
 import os
 
 
-try: 
+try:
     link = "http://suninjuly.github.io/file_input.html"
     browser = webdriver.Chrome()
     browser.get(link)
@@ -20,7 +20,7 @@ try:
     file_path = os.path.join(current_dir, 'sample.txt')
     with open(file_path, 'w') as f:
         f.write('sample text')
-    
+
     input4 = browser.find_element(By.CSS_SELECTOR, "[type='file']")
     input4.send_keys(file_path)
 
